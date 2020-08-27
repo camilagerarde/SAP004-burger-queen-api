@@ -14,7 +14,7 @@ module.exports = {
       table: {
         type: Sequelize.INTEGER,
       },
-      is_active: {
+      isActive: {
         type: Sequelize.BOOLEAN,
       },
       status: {
