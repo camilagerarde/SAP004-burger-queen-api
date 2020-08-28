@@ -1,7 +1,7 @@
-"use strict";
+'use strict';
 module.exports = (sequelize, DataTypes) => {
   const ProductsToOrder = sequelize.define(
-    "ProductsToOrder",
+    'ProductsToOrder',
     {
       count: DataTypes.INTEGER,
       addEgg: DataTypes.BOOLEAN,

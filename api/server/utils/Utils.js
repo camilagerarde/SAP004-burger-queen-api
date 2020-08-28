@@ -10,13 +10,13 @@ export default class Util {
     this.statusCode = statusCode;
     this.message = message;
     this.data = data;
-    this.type = "success";
+    this.type = 'success';
   }
 
   setError(statusCode, message) {
     this.statusCode = statusCode;
     this.message = message;
-    this.type = "error";
+    this.type = 'error';
   }
 
   send(res) {
@@ -25,8 +25,7 @@ export default class Util {
       message: this.message,
       data: this.data,
     };
-
-    if (this.type === "success") {
+    if (this.type === 'success') {
       return res.status(this.statusCode).json(result);
     }
     return res.status(this.statusCode).json({

@@ -1,7 +1,7 @@
-"use strict";
+'use strict';
 module.exports = (sequelize, DataTypes) => {
   const Menu = sequelize.define(
-    "Menu",
+    'Menu',
     {
       product: DataTypes.STRING,
       price: DataTypes.DECIMAL(10, 2),
