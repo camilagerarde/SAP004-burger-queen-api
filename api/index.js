@@ -1,15 +1,19 @@
-import express from "express";
-import bodyParser from "body-parser";
+import express from 'express';
+import bodyParser from 'body-parser';
+import menuRoutes from './server/routes/MenuRoutes';
+import orderRoutes from './server/routes/OrderRoutes';
 
 const app = express();
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: false }));
-
 const port = process.env.PORT || 3000;
 
-app.get("*", (req, res) =>
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use('/api/menu', menuRoutes);
+app.use('/api/order', orderRoutes);
+
+app.get('*', (req, res) =>
   res.status(200).send({
-    message: "Esta é a API da nossa hamburgueria.",
+    message: 'Bem-vindos à API Comic Burger!',
   })
 );
 
@@ -17,4 +21,4 @@ app.listen(port, () => {
   console.log(`Server is running on PORT ${port}`);
 });
 
-export default app;
+module.exports = app;

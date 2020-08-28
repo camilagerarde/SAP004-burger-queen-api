@@ -3,14 +3,15 @@ module.exports = (sequelize, DataTypes) => {
   const ProductsToOrder = sequelize.define(
     "ProductsToOrder",
     {
-      product: DataTypes.STRING,
       count: DataTypes.INTEGER,
-      price: DataTypes.DECIMAL(10, 2),
+      addEgg: DataTypes.BOOLEAN,
+      addCheese: DataTypes.BOOLEAN,
     },
     {}
   );
   ProductsToOrder.associate = function (models) {
-    // associations can be defined here
+    ProductsToOrder.belongsTo(models.Menu);
+    ProductsToOrder.belongsTo(models.Order);
   };
   return ProductsToOrder;
 };

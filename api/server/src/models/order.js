@@ -5,14 +5,14 @@ module.exports = (sequelize, DataTypes) => {
     {
       waiter: DataTypes.STRING,
       table: DataTypes.INTEGER,
-      is_active: DataTypes.BOOLEAN,
+      isActive: DataTypes.BOOLEAN,
       status: DataTypes.STRING,
       total: DataTypes.DECIMAL(10, 2),
     },
     {}
   );
   Order.associate = function (models) {
-    // associations can be defined here
+    Order.hasMany(models.ProductsToOrder);
   };
   return Order;
 };

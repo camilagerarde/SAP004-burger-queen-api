@@ -1,7 +1,7 @@
-"use strict";
+'use strict';
 module.exports = {
   up: (queryInterface, Sequelize) => {
-    return queryInterface.createTable("Menus", {
+    return queryInterface.createTable('Menus', {
       id: {
         allowNull: false,
         autoIncrement: true,
@@ -20,6 +20,14 @@ module.exports = {
       category: {
         type: Sequelize.STRING,
       },
+      hasOption: {
+        type: Sequelize.BOOLEAN,
+        defaultValue: false,
+      },
+      isBurger: {
+        type: Sequelize.BOOLEAN,
+        defaultValue: false,
+      },
       createdAt: {
         allowNull: false,
         type: Sequelize.DATE,
@@ -31,6 +39,6 @@ module.exports = {
     });
   },
   down: (queryInterface, Sequelize) => {
-    return queryInterface.dropTable("Menus");
+    return queryInterface.dropTable('Menus');
   },
 };

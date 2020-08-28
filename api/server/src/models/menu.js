@@ -7,11 +7,13 @@ module.exports = (sequelize, DataTypes) => {
       price: DataTypes.DECIMAL(10, 2),
       type: DataTypes.STRING,
       category: DataTypes.STRING,
+      hasOption: DataTypes.BOOLEAN,
+      isBurger: DataTypes.BOOLEAN,
     },
     {}
   );
   Menu.associate = function (models) {
-    // associations can be defined here
+    Menu.hasMany(models.ProductsToOrder);
   };
   return Menu;
 };
