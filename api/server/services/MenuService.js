@@ -1,4 +1,4 @@
-import database from "../src/models";
+import database from '../src/models';
 
 class MenuService {
   static async getAllMenu() {
@@ -9,22 +9,22 @@ class MenuService {
     }
   }
 
-  static async addMenu(newMenu) {
+  static async addProduct(newProduct) {
     try {
-      return await database.Menu.create(newMenu);
+      return await database.Menu.create(newProduct);
     } catch (error) {
       throw error;
     }
   }
 
-  static async updateMenu(id, updateMenu) {
+  static async updateProduct(id, updateProduct) {
     try {
-      const menuToUpdate = await database.Menu.findOne({
+      const productToUpdate = await database.Menu.findOne({
         where: { id: Number(id) },
       });
-      if (menuToUpdate) {
-        await database.Menu.update(updateMenu, { where: { id: Number(id) } });
-        return updateMenu;
+      if (productToUpdate) {
+        await database.Menu.update(updateProduct, { where: { id: Number(id) } });
+        return updateProduct;
       }
       return null;
     } catch (error) {
@@ -32,28 +32,28 @@ class MenuService {
     }
   }
 
-  static async getMenu(id) {
+  static async getProduct(id) {
     try {
-      const theMenu = await database.Menu.findOne({
+      const theProduct = await database.Menu.findOne({
         where: { id: Number(id) },
       });
-      return theMenu;
+      return theProduct;
     } catch (error) {
       throw error;
     }
   }
 
-  static async deleteMenu(id) {
+  static async deleteProduct(id) {
     try {
-      const menuToDelete = await database.Menu.findOne({
+      const productToDelete = await database.Menu.findOne({
         where: { id: Number(id) },
       });
 
-      if (menuToDelete) {
-        const deletedMenu = await database.Menu.destroy({
+      if (productToDelete) {
+        const deletedProduct = await database.Menu.destroy({
           where: { id: Number(id) },
         });
-        return deletedMenu;
+        return deletedProduct;
       }
       return null;
     } catch (error) {

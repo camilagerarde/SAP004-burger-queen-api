@@ -1,7 +1,7 @@
-import database from "../src/models";
+import database from '../src/models';
 
 class OrderService {
-  static async getAllOrder() {
+  static async getAllOrders() {
     try {
       return await database.Order.findAll();
     } catch (error) {

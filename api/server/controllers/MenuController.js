@@ -8,9 +8,9 @@ class MenuController {
     try {
       const allMenu = await MenuService.getAllMenu();
       if (allMenu.length > 0) {
-        util.setSuccess(200, 'Menu retrieved', allMenu);
+        util.setSuccess(200, 'Menu encontrado!', allMenu);
       } else {
-        util.setSuccess(200, 'No Menu found');
+        util.setSuccess(200, 'Nenhum produto encontrado!');
       }
       return util.send(res);
     } catch (error) {
@@ -19,16 +19,15 @@ class MenuController {
     }
   }
 
-  static async addMenu(req, res) {
-    console.log(req.body.product, req.body.price);
+  static async addProduct(req, res) {
     if (!req.body.product || !req.body.price || !req.body.type || !req.body.category) {
-      util.setError(400, 'Please provide complete details');
+      util.setError(400, 'Por favor, inclua todas as informações!');
       return util.send(res);
     }
-    const newMenu = req.body;
+    const newProduct = req.body;
     try {
-      const createdMenu = await MenuService.addMenu(newMenu);
-      util.setSuccess(201, 'Menu Added!', createdMenu);
+      const createdProduct = await MenuService.addProduct(newProduct);
+      util.setSuccess(201, 'Produto adicionado!', createdProduct);
       return util.send(res);
     } catch (error) {
       util.setError(400, error.message);
@@ -36,19 +35,19 @@ class MenuController {
     }
   }
 
-  static async updatedMenu(req, res) {
-    const alteredMenu = req.body;
+  static async updatedProduct(req, res) {
+    const alteredProduct = req.body;
     const { id } = req.params;
     if (!Number(id)) {
-      util.setError(400, 'Please input a valid numeric value');
+      util.setError(400, 'Por favor, insira o número(ID) correto do produto!');
       return util.send(res);
     }
     try {
-      const updateMenu = await MenuService.updateMenu(id, alteredMenu);
-      if (!updateMenu) {
-        util.setError(404, `Cannot find menu with the id: ${id}`);
+      const updateProduct = await MenuService.updateProduct(id, alteredProduct);
+      if (!updateProduct) {
+        util.setError(404, `Nenhum produto encontrado com o ID: ${id}`);
       } else {
-        util.setSuccess(200, 'Menu updated', updateMenu);
+        util.setSuccess(200, 'Produto atualizado!', updateProduct);
       }
       return util.send(res);
     } catch (error) {
@@ -57,21 +56,19 @@ class MenuController {
     }
   }
 
-  static async getMenu(req, res) {
+  static async getProduct(req, res) {
     const { id } = req.params;
-
     if (!Number(id)) {
-      util.setError(400, 'Please input a valid numeric value');
+      util.setError(400, 'Por favor, insira o número(ID) correto do produto!');
       return util.send(res);
     }
 
     try {
-      const theMenu = await MenuService.getMenu(id);
-
-      if (!theMenu) {
-        util.setError(404, `Cannot find Menu with the id ${id}`);
+      const theProduct = await MenuService.getProduct(id);
+      if (!theProduct) {
+        util.setError(404, `Nenhum produto encontrado com o ID: ${id}`);
       } else {
-        util.setSuccess(200, 'Found Menu', theMenu);
+        util.setSuccess(200, 'Produto encontrado', theProduct);
       }
       return util.send(res);
     } catch (error) {
@@ -80,21 +77,18 @@ class MenuController {
     }
   }
 
-  static async deleteMenu(req, res) {
+  static async deleteProduct(req, res) {
     const { id } = req.params;
-
     if (!Number(id)) {
-      util.setError(400, 'Please provide a numeric value');
+      util.setError(400, 'Por favor, insira o número(ID) correto do produto!');
       return util.send(res);
     }
-
     try {
-      const menuToDelete = await MenuService.deleteMenu(id);
-
-      if (menuToDelete) {
-        util.setSuccess(200, 'Menu deleted');
+      const ProductToDelete = await MenuService.deleteProduct(id);
+      if (ProductToDelete) {
+        util.setSuccess(200, 'Produto excluído!');
       } else {
-        util.setError(404, `Menu with the id ${id} cannot be found`);
+        util.setError(404, `Nenhum produto encontrado com o ID: ${id}`);
       }
       return util.send(res);
     } catch (error) {
