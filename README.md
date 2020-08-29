@@ -2,28 +2,28 @@
 
 ## Índice
 
-- [1. Resumo do projeto](#1-resumo-do-projeto)
-- [2. Como utilizar](#2-como-utilizar)
+- [1. Resumo do projeto](#1-resumo-do-projeto-hamburger)
+- [2. Como utilizar](#2-como-utilizar-computer)
 - [3. Endpoints](#3-endpoints)
 - [4. Tecnologias utilizadas](#4-tecnologias-utilizadas)
 - [5. Implementações futuras](#5-implementações-futuras)
-- [6. Agradecimentos](#6-agradecimentos)
+- [6. Agradecimentos](#6-agradecimentos-star)
 
 ---
 
-## 1. Resumo do projeto
+## 1. Resumo do projeto :hamburger:
 
 Criação de uma _API rest_, para uma hamburgueria com o banco de dados relacional dos produtos do menu e pedidos.
 
 A API foi desenvolvida com [Node.js](https://nodejs.org/), [Express](https://expressjs.com/), [Sequelize](https://sequelize.org), [PostgreSQL](https://www.postgresql.org/docs/) e outras bibliotecas auxiliares na plataforma [Docker](https://www.docker.com/) e hospedagem no [Heroku](https://www.heroku.com/home).
 
-## 2. Como utilizar
+## 2. Como utilizar :computer:
 
-#### Deploy
+### Deploy
 
 É possível acessar a API pelo [link](https://api-comic-burger.herokuapp.com/) e verificar aqui o [menu](https://api-comic-burger.herokuapp.com/api/menu) e [pedidos](https://api-comic-burger.herokuapp.com/api/order).
 
-#### Local
+### Local
 
 - [Clone](https://help.github.com/articles/cloning-a-repository/) o projeto na sua máquina executando o seguinte comando no seu terminal:
 
@@ -65,7 +65,7 @@ http://localhost:3000/api/order
 
 ## 3. Endpoints
 
-#### `/menu`
+### `/menu`
 
 - [ ] `GET /menu`
 - [ ] `GET /menu/:productid`
@@ -73,7 +73,7 @@ http://localhost:3000/api/order
 - [ ] `PUT /menu/:productid`
 - [ ] `DELETE /menu/:productid`
 
-#### `/order`
+### `/order`
 
 - [ ] `GET /order`
 - [ ] `GET /order/:orderid`
@@ -100,7 +100,7 @@ http://localhost:3000/api/order
 - Inclusão dos itens nos pedidos
 - Autenticação de usuários
 
-## 6. Agradecimentos
+## 6. Agradecimentos :star:
 
 Este projeto foi feito com base no projeto da [Laboratória](https://github.com/Laboratoria).
 
