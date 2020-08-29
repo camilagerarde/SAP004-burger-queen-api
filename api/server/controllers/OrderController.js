@@ -26,7 +26,10 @@ class OrderController {
       typeof req.body.isActive !== 'boolean' ||
       !req.body.status
     ) {
-      util.setError(400, 'Por favor, inclua todas as informações!');
+      util.setError(
+        400,
+        'Por favor, inclua todas as informações! (atendente, mesa, pedido ativo e status do pedido)'
+      );
       return util.send(res);
     }
     const newOrder = req.body;

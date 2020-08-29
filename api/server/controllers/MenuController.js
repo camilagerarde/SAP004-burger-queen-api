@@ -21,7 +21,10 @@ class MenuController {
 
   static async addProduct(req, res) {
     if (!req.body.product || !req.body.price || !req.body.type || !req.body.category) {
-      util.setError(400, 'Por favor, inclua todas as informações!');
+      util.setError(
+        400,
+        'Por favor, inclua todas as informações! (produto, preço, tipo e categoria)'
+      );
       return util.send(res);
     }
     const newProduct = req.body;
