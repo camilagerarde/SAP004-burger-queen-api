@@ -13,7 +13,7 @@ app.use('/api/order', orderRoutes);
 
 app.get('*', (req, res) =>
   res.status(200).send({
-    message: 'Bem-vindos à API Comic Burger!',
+    message: 'Bem-vindos à API da hamburgueria Comic Burger!',
   })
 );
 
