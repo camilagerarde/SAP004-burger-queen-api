@@ -43,7 +43,7 @@ npm install
 docker compose up <ambiente>
 ```
 
-_Obs. caso retorne erro, talvez seja necessário o uso de `sudo` no início do comando, dessa forma: `sudo docker compose up <ambiente>`_
+_Obs. Caso retorne erro, talvez seja necessário o uso de `sudo` no início do comando, dessa forma: `sudo docker compose up <ambiente>`_
 
 - E visualize no seu navegador com o link:
 
@@ -102,6 +102,6 @@ http://localhost:3000/api/order
 
 ## 6. Agradecimentos
 
-Este projeto foi feito com base no projeto da [Laboratoria](https://github.com/Laboratoria).
+Este projeto foi feito com base no projeto da [Laboratória](https://github.com/Laboratoria).
 
 [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
