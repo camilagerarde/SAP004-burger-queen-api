@@ -1,10 +1,10 @@
 # Comic Burger - Back-end
 
-[Introdução](#introdução-hamburger) | [Instalação e execução](#instalação-e-execução-octocat) | [Endpoints](#endpoints) | [Tecnologias e bibliotecas utilizadas](#tecnologias-e-bibliotecas-utilizadas-star) | [Implementações futuras](#implementações-futuras)
+[Introdução](#introdução) | [Instalação e execução](#instalação-e-execução-octocat) | [Endpoints](#endpoints) | [Tecnologias e bibliotecas utilizadas](#tecnologias-e-bibliotecas-utilizadas-star) | [Implementações futuras](#implementações-futuras)
 
 ---
 
-## Introdução :hamburger:
+## Introdução
 
 Criação de uma _API rest_, para uma hamburgueria com o banco de dados relacional dos produtos do menu e pedidos.
 
