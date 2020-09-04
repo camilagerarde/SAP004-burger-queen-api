@@ -1,6 +1,6 @@
 # Comic Burger - Back-end
 
-[Introdução](#introdução-hamburger) | [Instalação e execução. :octocat:](#instalação-e-execução-octocat) | [Endpoints](#endpoints) | [Tecnologias e bibliotecas utilizadas](#tecnologias-e-bibliotecas-utilizadas-star) | [Implementações futuras](#implementações-futuras)
+[Introdução](#introdução-hamburger) | [Instalação e execução](#instalação-e-execução-octocat) | [Endpoints](#endpoints) | [Tecnologias e bibliotecas utilizadas](#tecnologias-e-bibliotecas-utilizadas-star) | [Implementações futuras](#implementações-futuras)
 
 ---
 
