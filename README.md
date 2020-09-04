@@ -1,6 +1,6 @@
 # Comic Burger - Back-end
 
-[Introdução](#introdução-hamburger) | [Como utilizar](#como-utilizar-computer) | [Endpoints](#endpoints) | [Tecnologias e bibliotecas utilizadas](#tecnologias-e-bibliotecas-utilizadas-star) | [Implementações futuras](#implementações-futuras)
+[Introdução](#introdução-hamburger) | [Instalação e execução. :octocat:](#instalação-e-execução-octocat) | [Endpoints](#endpoints) | [Tecnologias e bibliotecas utilizadas](#tecnologias-e-bibliotecas-utilizadas-star) | [Implementações futuras](#implementações-futuras)
 
 ---
 
@@ -10,7 +10,7 @@ Criação de uma _API rest_, para uma hamburgueria com o banco de dados relacion
 
 A API foi desenvolvida com [Node.js](https://nodejs.org/), [Express](https://expressjs.com/), [Sequelize](https://sequelize.org), [PostgreSQL](https://www.postgresql.org/docs/) e outras bibliotecas auxiliares na plataforma [Docker](https://www.docker.com/) e hospedagem no [Heroku](https://www.heroku.com/home).
 
-## Como utilizar :computer:
+## Instalação e execução. :octocat:
 
 ### Deploy
 
