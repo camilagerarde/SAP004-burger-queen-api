@@ -1,23 +1,16 @@
 # Comic Burger - Back-end
 
-## Índice
-
-- [1. Resumo do projeto](#1-resumo-do-projeto-hamburger)
-- [2. Como utilizar](#2-como-utilizar-computer)
-- [3. Endpoints](#3-endpoints)
-- [4. Tecnologias utilizadas](#4-tecnologias-utilizadas)
-- [5. Implementações futuras](#5-implementações-futuras)
-- [6. Agradecimentos](#6-agradecimentos-star)
+[Introdução](#introdução-hamburger) | [Como utilizar](#como-utilizar-computer) | [Endpoints](#endpoints) | [Tecnologias e bibliotecas utilizadas](#tecnologias-e-bibliotecas-utilizadas-star) | [Implementações futuras](#implementações-futuras)
 
 ---
 
-## 1. Resumo do projeto :hamburger:
+## Introdução :hamburger:
 
 Criação de uma _API rest_, para uma hamburgueria com o banco de dados relacional dos produtos do menu e pedidos.
 
 A API foi desenvolvida com [Node.js](https://nodejs.org/), [Express](https://expressjs.com/), [Sequelize](https://sequelize.org), [PostgreSQL](https://www.postgresql.org/docs/) e outras bibliotecas auxiliares na plataforma [Docker](https://www.docker.com/) e hospedagem no [Heroku](https://www.heroku.com/home).
 
-## 2. Como utilizar :computer:
+## Como utilizar :computer:
 
 ### Deploy
 
@@ -25,10 +18,10 @@ A API foi desenvolvida com [Node.js](https://nodejs.org/), [Express](https://exp
 
 ### Local
 
-- [Clone](https://help.github.com/articles/cloning-a-repository/) o projeto na sua máquina executando o seguinte comando no seu terminal:
+- Clone o projeto na sua máquina executando o seguinte comando no seu terminal:
 
 ```sh
-git clone (link-do-repositório)
+git clone https://github.com/camilagerarde/SAP004-burger-queen-api
 ```
 
 - Instale as dependências do projeto com o comando:
@@ -63,7 +56,7 @@ http://localhost:3000/api/menu
 http://localhost:3000/api/order
 ```
 
-## 3. Endpoints
+## Endpoints
 
 ### `/menu`
 
@@ -81,7 +74,7 @@ http://localhost:3000/api/order
 - [ ] `PUT /order/:orderid`
 - [ ] `DELETE /order/:orderid`
 
-## 4. Tecnologias utilizadas
+## Tecnologias e bibliotecas utilizadas :star:
 
 - [Node.js](https://nodejs.org/)
 - [Docker](https://www.docker.com/)
@@ -94,14 +87,12 @@ http://localhost:3000/api/order
 - [Eslint](https://www.npmjs.com/package/eslint-plugin-react)
 - [Heroku](https://www.heroku.com/home)
 
-## 5. Implementações futuras
+## Implementações futuras
 
 - Testes
 - Inclusão dos itens nos pedidos
 - Autenticação de usuários
 
-## 6. Agradecimentos :star:
-
-Este projeto foi feito com base no projeto da [Laboratória](https://github.com/Laboratoria).
+**Projeto realizado por [Camila Cunha](https://github.com/camilagerarde), para o Bootcamp da [Laboratória](https://github.com/Laboratoria).**
 
 [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
